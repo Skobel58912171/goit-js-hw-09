@@ -10,6 +10,7 @@ function getRandomHexColor() {
 }
 function onClickStart(evt) {
   refs.start.disabled = true;
+  refs.stop.disabled = false;
   timerId = setInterval(() => {
     const bodyEl = document.querySelector('body');
     bodyEl.style.background = getRandomHexColor();
@@ -19,6 +20,7 @@ function onClickStart(evt) {
 
 function onClickStop(evt) {
   refs.start.disabled = false;
+  refs.stop.disabled = true;
   clearInterval(timerId);
 }
 refs.start.addEventListener('click', onClickStart);
