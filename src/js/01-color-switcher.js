@@ -1,6 +1,6 @@
 const refs = {
-  start: document.querySelector('button[data-action="start"]'),
-  stop: document.querySelector('button[data-action="stop"]'),
+  start: document.querySelector('[data-start]'),
+  stop: document.querySelector('[data-stop]'),
 };
 let timerId = null;
 // console.log(refs.start);
